@@ -205,14 +205,29 @@ h1 {
 .About-us {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding: 40px;
+    gap: 80px;
+    padding: 80px;
     max-width: 1200px;
 
     .col-1A, .col-2A, .col-3A {
         display: flex;
         gap: 40px;
+        align-items: center;
         
+        p {
+            width: 100%;
+        }
+        
+    }
+
+    .col-1A {
+        gap: 100px;
+    }
+
+    .col-2A, .col-3A {
+        img {
+            width: 500px;
+        }
     }
 }
 
@@ -220,14 +235,17 @@ h1 {
     display: flex;
     flex-direction: row;
     width: fit-content;
+    gap: 20px;
     
     h1 {
         font-weight: 800;
-        width: 160px;
+        font-size: 64px;
+        line-height: 75px;
+        width: fit-content;
     }
 
     img {
-        width: 100px;
+        width: 120px;
         height: fit-content;
         align-self: flex-end;
     }
@@ -306,5 +324,42 @@ h1 {
 
     .card-services {
         flex-direction: column;
+    }
+
+    .About-us {
+        padding: 20px;
+        gap: 80px;
+        padding-bottom: 80px;
+
+        .col-1A, .col-2A, .col-3A {
+            flex-direction: column;
+        }
+
+        .col-1A {
+            gap: 10px;
+        }
+
+        .col-3A {
+            flex-direction: column-reverse;
+        }
+
+        .tentang-kami {
+            flex-direction: column-reverse;
+            justify-content: start;
+            width: 100%;
+            align-items: start;
+            justify-content: center;
+
+            h1 {
+                width: 300px;
+                font-size: 80px;
+                line-height: 100px;
+            }
+
+            img {
+                width: fit-content;
+                align-self: flex-start;
+            }
+        }
     }
 }
