@@ -251,6 +251,41 @@ h1 {
     }
 }
 
+.opening-hours {
+    background-image: url(/images/bg-contact.jpg);
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    color: var(--biru-brand);
+}
+
+.col-1B, .col-2B {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 10px;
+    border-radius: 20px;
+    width: 450px;
+    height: 470px;
+
+    h3 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
+.straight-line {
+    background-color: rgba(46, 81, 113, 0.2);
+    width: 100%;
+    height: 1px;
+}
+
 @media screen and (max-width: 600px) {
     .Home {
         margin-top: 80px;
@@ -360,6 +395,16 @@ h1 {
                 width: fit-content;
                 align-self: flex-start;
             }
+        }
+    }
+
+    .opening-hours {
+        flex-direction: column;
+        padding: 20px;
+
+        .col-1B, .col-2B {
+            width: 100%;
+            height: fit-content;
         }
     }
 }
